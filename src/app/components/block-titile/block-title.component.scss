@@ -1,0 +1,30 @@
+:host {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+
+  .title__wrapper {
+    height: 60px;
+
+    .title__title {
+      font-family: "Forum-variable", Roboto, sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      backdrop-filter: blur(30px);
+    }
+
+    .title__description {
+      width: 100%;
+      font-size: 24px;
+      color: #D9BA9B;
+      margin-top: 15px;
+      font-family: "Jost-variable", Roboto, sans-serif;
+    }
+  }
+}

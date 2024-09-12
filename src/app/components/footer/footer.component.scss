@@ -1,0 +1,42 @@
+.footer__wrapper{
+  position: relative;
+  margin-top: 50px;
+  height: 150px;
+  width: 100%;
+
+
+  .footer__data{
+    position: relative;
+    width: 70%;
+    margin-left: 10%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr) ;
+    font-size: 20px;
+    align-items: center;
+    font-family: "Jost-variable", sans-serif;
+  }
+
+  .footer__description--dark{
+    color: #838383;
+  }
+
+
+  .footer__potitic{
+    min-width: 270px;
+  }
+
+
+  .footer__decoration{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 150px;
+    height: 152.92px;
+    gap: 0;
+    transform: rotate(330deg);
+    background-image: url("/assets/svg/decoration-steps.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

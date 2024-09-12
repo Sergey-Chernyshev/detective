@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header__logo"></div>
+
+
+
+  <nav class="header__menu">
+    <ul class="header-menu__left">
+      <div class="left-menu__city">Москва</div>
+    </ul>
+
+    <ul class="header-menu__links">
+      <li *ngFor="let menuItem of menuItems">
+        <a [href]="menuItem.link">{{ menuItem.text }}</a>
+      </li>
+    </ul>
+
+    <ul class="right-menu__contacts">
+      <li class="contacts__phone">79162810384</li>
+
+      <ul class="mt-15">
+        <li class="contacts__links" *ngFor="let socialItem of socialItems">
+          <a [href]="socialItem.link"></a>
+        </li>
+      </ul>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,71 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+
+
+  .about-work__wrapper{
+    width: 100%;
+    margin-top: 50px;
+
+    .about-work__list{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(100px, 300px));
+      justify-content: center;
+      justify-items: center;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
+
+      .about-work__item{
+        width: 100%;
+        height: 350px;
+        max-width: 300px;
+        padding: 20px;
+        background-color: #212020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .about-item__number{
+          display: flex;
+          width: 62px;
+          height: 62px;
+          border-radius: 50%;
+          background: linear-gradient(251.27deg, #D1C2A9 12.87%, #F4AC11 84.36%);
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          font-family: Montserrat, Roboto, sans-serif;
+          font-size: 22.18px;
+          font-weight: 700;
+          line-height: 27.03px;
+        }
+
+        .about-item__title{
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26.01px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .about-item__description{
+          font-family: "Jost-variable", Roboto, sans-serif;
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 24.57px;
+          text-align: left;
+          margin-top: 20px;
+
+        }
+
+      }
+    }
+
+
+  }
+}

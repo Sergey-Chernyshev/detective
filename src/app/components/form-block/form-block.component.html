@@ -1,0 +1,71 @@
+<form class="form__wrapper" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form__top-inputs">
+    <input
+      class="form__input"
+      type="tel"
+      placeholder="Телефон"
+      formControlName="phoneNumber"
+    />
+    <input
+      class="form__input"
+      type="text"
+      name=""
+      id=""
+      placeholder="Ваше имя"
+      formControlName="userName"
+    />
+  </div>
+
+  <input
+    class="form__input"
+    type="email"
+    name=""
+    id=""
+    placeholder="Ваш Email"
+    formControlName="userEmail"
+  >
+  <textarea
+    name=""
+    id=""
+    cols="30"
+    rows="10"
+    placeholder="Опишите вашу проблему или вопрос, укажите важные данные"
+    formControlName="userMessage"
+  ></textarea>
+</form>
+
+<div class="contacts__wrapper">
+  <div class="contacts__icons-list">
+
+  </div>
+
+  <div class="contacts__phone">+7901110000</div>
+  <app-button-main
+    buttonText="Оставить заявку"
+    (buttonClick)="onButtonClick()"
+  />
+</div>
+
+<div class="form__check-politic__wrapper">
+  <div class="checkbox-wrapper">
+    <input
+      type="checkbox"
+      id="checkbox"
+      (change)="changePolicy($event)"
+    >
+    <label for="checkbox" class="custom-checkbox"></label>
+  </div>
+  <label for="checkbox">
+    <div class="politic__text">
+      Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
+    </div>
+  </label>
+
+
+</div>
+<div class="error">{{error || ""}}</div>
+
+<div class="form__back-img"></div>
+
+
+

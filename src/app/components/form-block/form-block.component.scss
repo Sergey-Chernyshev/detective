@@ -1,0 +1,137 @@
+:host {
+  position: relative;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FFFFFF14;
+  padding: 45px;
+
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .form__top-inputs {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+    }
+  }
+
+  .contacts__wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .contacts__phone{
+      font-family: "Jost-variable", sans-serif, serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 60px;
+      text-align: left;
+      color: #999999;
+    }
+  }
+}
+
+.form__back-img{
+  //position: absolute;
+  //width: 20%;
+  //height: 100%;
+  //background-image: url("/assets/imgs/form-img.png");
+  //z-index: -1;
+  //right: -5%;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+}
+
+
+
+.form__input {
+  width: 100%;
+  height: 70px;
+  border: 1.4px solid #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 19.45px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.form__checkbox{
+  width: 20px;
+  height: 20px;
+  top: 422.6px;
+  left: 52px;
+}
+
+textarea{
+  width: 100%;
+  resize: vertical;
+  border: 1.4px solid #FFFFFF;
+  height: 150px;
+  min-height: 150px;
+  max-height: 300px;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 19.45px;
+  text-align: left;
+  padding: 20px;
+}
+
+.form__check-politic__wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  column-gap: 20px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Скрываем стандартный чекбокс */
+.checkbox-wrapper input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Создаем кастомный чекбокс */
+.checkbox-wrapper .custom-checkbox {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 4px solid #a6a6a6;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Стиль для состояния "checked" */
+.checkbox-wrapper input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #a6a6a6;
+
+}
+
+
+.error{
+  display: flex;
+  color: #ff9b9b;
+  font-size: 18px;
+  font-family: "Inter", sans-serif, serif;
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 10%;
+  text-align: center;
+  font-weight: 700;
+}
