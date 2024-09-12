@@ -1,0 +1,85 @@
+:host {
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    text-align: center;
+    font-family: Manrope, Roboto, sans-serif;
+
+    .header__menu {
+      width: 100%;
+      align-items: center;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 150px;
+      padding-right: 50px;
+
+      .header-menu__left {
+        color: #BEB7B7;
+        font-size: 20px;
+      }
+
+      .header-menu__links {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+
+        li {
+          font-size: 24px;
+          color: #BEB7B7;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+
+          &::after {
+            content: "•"; // Точка между элементами
+            padding-left: 20px; // Отступы вокруг точки
+            color: #BEB7B7; // Цвет точки
+          }
+
+          &:last-child::after {
+            content: ""; // Убираем точку после последнего элемента
+          }
+
+          &:hover {
+            color: #BEB7B7;
+          }
+        }
+      }
+
+      .right-menu__contacts {
+        display: flex;
+        flex-direction: column;
+
+        .contacts__phone {
+          font-size: 24px;
+          color: #BEB7B7;
+          font-weight: 700;
+        }
+
+
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 19px;
+          padding-right: 19px;
+
+          li {
+            background: #FFFFFF;
+            width: 13px;
+            height: 13px;
+
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+}

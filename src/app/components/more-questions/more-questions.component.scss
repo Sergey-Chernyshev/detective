@@ -1,0 +1,53 @@
+:host {
+  position: relative;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 330px;
+  align-items: center;
+  width: 100%;
+  text-align: right;
+  grid-column-gap: 50px;
+
+
+  .questions__left-side {
+    padding-left: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 30px;
+
+    .questions__title {
+      width: 550px;
+      font-family: "Forum-variable", serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 44.16px;
+      text-align: left;
+    }
+
+    .questions__description{
+      max-width: 550px;
+      font-family: "Jost-variable", sans-serif, serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34.68px;
+      text-align: left;
+
+    }
+  }
+
+
+  .questions__back-img{
+    position: absolute;
+    background-image: url("/assets/imgs/questions-extra-el.png");
+    width: 237px;
+    height: 325.16px;
+    right: calc(237px);
+    filter: drop-shadow(0 0 20px rgba(241, 241, 241, 0.53));
+  }
+
+  .questions_button{
+    padding-right: 50px;
+  }
+}

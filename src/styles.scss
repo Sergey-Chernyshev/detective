@@ -1,0 +1,9 @@
+@import './styles/reset';
+@import './styles/margins';
+@import './styles/fonts';
+@import "./styles/variables";
+
+body{
+  background-color: $primary-background-color;
+  color: $primary-color;
+}

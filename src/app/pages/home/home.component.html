@@ -1,0 +1,53 @@
+<app-preview-block/>
+
+<app-services-preview/>
+
+<div class="main-wrapper">
+
+  <app-block-titile
+    titleText="ДЛЯ ФИЗИЧЕСКИХ ЛИЦ"
+  />
+
+  <app-services-main
+    [linkText]="'Все услуги для физлиц →'"
+    [linkUrl]="'/allUr'"
+  />
+
+  <app-block-titile
+    titleText="УСЛУГИ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ"
+  />
+
+  <app-services-main
+    [linkText]="'Все услуги для юрлиц →'"
+    [linkUrl]="'/allUr'"
+  />
+
+  <app-block-titile
+    titleText="Как мы работаем"
+    titleDescription="Регламент по работе с клиентами детективного агентства"
+  />
+  <app-how-we-work />
+
+  <app-more-questions />
+
+  <app-block-titile
+    titleText="лицензия"
+  />
+  <app-license-block />
+
+  <app-block-titile
+    titleText="ПОЧЕМУ ИМЕННО МЫ?"
+  />
+  <app-why-choose-us />
+
+  <app-block-titile
+    titleText="Мы не занимаемся:"
+  />
+  <app-dont-do />
+
+  <app-form-block />
+
+
+</div>
+
+<app-map />

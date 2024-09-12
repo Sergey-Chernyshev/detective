@@ -1,0 +1,25 @@
+:host{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  padding-left: 90px;
+  grid-column-gap: 90px;
+
+  .license__description{
+    display: flex;
+    height: 100%;
+    font-family: "Jost-variable", Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.38px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .license__preview{
+    width: 216px;
+    height: 279px;
+    background-color: #BEB7B7;
+  }
+}
