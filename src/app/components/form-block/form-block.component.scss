@@ -135,3 +135,18 @@ textarea{
   text-align: center;
   font-weight: 700;
 }
+
+
+@media (max-width: 1000px) {
+ :host{
+   grid-template-columns: 1fr;
+ }
+
+  .contacts__wrapper{
+    margin-top: 30px;
+  }
+
+  .form__check-politic__wrapper{
+    margin-top: 60px;
+  }
+}

@@ -35,3 +35,12 @@
   }
 
 }
+
+
+@media (max-width: 900px) {
+  .services__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-row-gap: 20px;
+  }
+}

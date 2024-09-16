@@ -1,4 +1,13 @@
-.main-wrapper{
+.main-wrapper {
   width: 90%;
   margin-left: 5%;
+}
+
+
+@media (max-width: 800px) {
+  .main-wrapper {
+
+    width: 98% !important;
+    margin-left: 1% !important;
+  }
 }

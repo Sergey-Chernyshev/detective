@@ -149,3 +149,31 @@
 }
 
 
+@media (max-width: 1100px) {
+  .header-wrapper__title{
+    font-size: 35px !important;
+    margin-left: 50px !important;
+  }
+
+  .header-wrapper__back-image{
+    display: none !important;
+  }
+
+  .header-wrapper__services{
+    margin-left: 100px !important;
+    row-gap: -10px !important;
+  }
+  .service-item{
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .item__present{
+    font-size: 25px !important;
+  }
+  .item__text{
+    font-size: 13px !important;
+  }
+}

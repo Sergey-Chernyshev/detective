@@ -23,3 +23,20 @@
     background-color: #BEB7B7;
   }
 }
+
+
+@media (max-width: 800px) {
+  :host{
+    grid-template-columns: 1fr !important;
+    padding-right: 50px !important;
+    padding-left: 60px !important;
+  }
+
+  .license__description{
+    font-size: 24px !important;
+  }
+
+  .license__preview{
+    display: none !important;
+  }
+}

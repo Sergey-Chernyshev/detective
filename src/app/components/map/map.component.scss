@@ -86,6 +86,22 @@
   .map__right-side {
     width: 100%;
     background-color: #BEB7B7;
+    min-height: 400px;
   }
 
+}
+
+
+@media (max-width: 1000px) {
+  :host{
+    grid-template-columns: 1fr;
+
+    .map__left-contacts{
+      padding-bottom: 30px;
+      width: 100% !important;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
 }
