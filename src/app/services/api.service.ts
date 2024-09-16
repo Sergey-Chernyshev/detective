@@ -23,7 +23,7 @@ interface LoginResponse {
   providedIn: 'root'
 })
 export class ApiService {
-  readonly #apiUrl = 'http://127.0.0.1:8000'; // Замените на ваш реальный API URL
+  readonly #apiUrl = 'https://gebodik.online/api'; // Замените на ваш реальный API URL
 
   #http = inject(HttpClient)
 
