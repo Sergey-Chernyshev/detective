@@ -110,3 +110,34 @@
     }
   }
 }
+
+
+@media (max-width: 519px) {
+  .service__item{
+    height: 200px !important;
+  }
+
+  .service-info__title{
+    font-size: 13px !important;
+  }
+}
+
+
+@media(max-width: 400px){
+  .services__list{
+    grid-row-gap: 0 !important;
+
+  }
+
+  .service-item__info{
+    margin-top: 80px !important;
+  }
+
+  .service__item{
+    height: 150px !important;
+  }
+
+  .service-info__link{
+    display: none !important;
+  }
+}

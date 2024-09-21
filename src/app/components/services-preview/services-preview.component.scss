@@ -103,3 +103,21 @@
     background-color: #212020 !important;
   }
 }
+
+
+@media (max-width: 500px) {
+  .services-wrapper__services-list{
+    grid-column-gap: 0 !important;
+    justify-items: center;
+    width: 100%;
+  }
+.services__wrapper{
+  justify-content: unset !important;
+}
+
+  .service__item{
+    width: 150px !important;
+  }
+
+
+}

@@ -25,6 +25,13 @@
       color: #D9BA9B;
       margin-top: 15px;
       font-family: "Jost-variable", Roboto, sans-serif;
+      text-align: center;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .title__title{
+    font-size: 30px !important;
   }
 }

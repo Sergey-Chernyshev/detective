@@ -1,3 +1,7 @@
+:host{
+  width: 100%;
+}
+
 .main__button {
   width: 320px;
   height: 70px;
@@ -17,5 +21,17 @@
     height: 100%;
     box-shadow: 0 3px 49px -3px #E28048C2;
     z-index: -1;
+  }
+}
+
+
+@media (max-width: 500px){
+  .main__button{
+    width: 100% !important;
+    font-size: 20px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

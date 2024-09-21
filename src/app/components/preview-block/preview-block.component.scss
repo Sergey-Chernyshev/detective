@@ -177,3 +177,30 @@
     font-size: 13px !important;
   }
 }
+
+@media (max-width: 500px) {
+
+  .header-wrapper__title{
+    line-height: 30px !important;
+    width: calc(100% - 80px) !important;
+    font-weight: 700;
+  }
+
+  .service-item{
+    line-height: 30px !important;
+
+  }
+
+  .header-wrapper__services{
+    margin-left: 60px !important;
+  }
+
+  .header-wrapper__about-us{
+    display: none;
+  }
+
+  .header-wrapper__button{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

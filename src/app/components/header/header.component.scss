@@ -51,6 +51,11 @@
       .right-menu__contacts {
         display: flex;
         flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
 
         .contacts__phone {
           font-size: 24px;
@@ -105,7 +110,8 @@
     align-items: center !important;
 
     .links__wrapper {
-      column-gap: 20px !important;
+      column-gap: 10px !important;
+      justify-content: space-evenly !important;
     }
   }
 }

@@ -15,9 +15,13 @@
     </section>
 
     <div class="header-wrapper__button">
-      <app-button-main
-        [buttonText]="'Оставить заявку'"
-      />
+      <a href="#form">
+        <app-button-main
+          toTargetLink="form-section"
+          [buttonText]="'Оставить заявку'"
+        />
+      </a>
+
     </div>
   </div>
 

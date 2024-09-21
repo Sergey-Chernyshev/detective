@@ -105,3 +105,14 @@
     }
   }
 }
+
+
+@media(max-width: 500px){
+  .line{
+    width: calc(100% + 10px) !important;
+  }
+
+  .contacts__social{
+    width: calc(100% + 10px) !important;
+  }
+}
