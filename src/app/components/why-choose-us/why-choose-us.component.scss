@@ -1,59 +1,60 @@
-:host{
+:host {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #212020;
   padding: 30px;
   grid-column-gap: 50px;
-
-
-  .why-we__left-items, .why-we__right-items{
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-
-    .item__title-block{
-      display: flex;
-      flex-direction: row;
-      align-items: end;
-      column-gap: 10px;
-
-      .title__number{
-        font-family: "Jost-variable", serif; ;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 43.57px;
-        text-align: left;
-        color: #BB8C5F;
-      }
-
-      .title__title{
-        font-family: "Jost-variable", serif; ;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28.9px;
-        text-align: left;
-        width: fit-content;
-        color: #B88C62;
-        border-bottom: 1px solid #B88C62;
-      }
-    }
-
-    .item__description{
-      text-align: left;
-      margin-top: 10px;
-      font-family: "Jost-variable", serif;
-      font-size: 15px;
-      font-weight: 200;
-      line-height: 21.68px;
-    }
-
-  }
+  grid-row-gap: 30px;
 }
 
+.why-we__items {
+  display: contents; /* Позволяет элементам внутри занимать сетку */
+}
+
+.item__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.item__title-block {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  column-gap: 10px;
+}
+
+.title__number {
+  font-family: "Jost-variable", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  text-align: left;
+  color: #BB8C5F;
+}
+
+.title__title {
+  font-family: "Jost-variable", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  text-align: left;
+  width: fit-content;
+  color: #B88C62;
+  border-bottom: 1px solid #B88C62;
+}
+
+.item__description {
+  text-align: left;
+  font-family: "Jost-variable", serif;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 21.68px;
+}
 
 @media (max-width: 900px) {
-  :host{
+  :host {
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
   }

@@ -15,11 +15,13 @@
     </ul>
 
     <ul class="right-menu__contacts">
-      <li class="contacts__phone">79162810384</li>
+      <li class="contacts__phone">+7901110000</li>
 
       <ul class="mt-15 links__wrapper">
         <li class="contacts__links" *ngFor="let socialItem of socialItems">
-          <a [href]="socialItem.link"></a>
+          <a [href]="socialItem.link">
+            <i class="bi" [ngClass]="socialItem.icon"></i>
+          </a>
         </li>
       </ul>
     </ul>

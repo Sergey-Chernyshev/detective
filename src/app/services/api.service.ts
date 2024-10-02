@@ -23,8 +23,8 @@ interface LoginResponse {
   providedIn: 'root'
 })
 export class ApiService {
-  readonly #apiUrl = 'http://127.0.0.1:8000'; // Замените на ваш реальный API URL
-
+  readonly #apiUrl = 'https://otdetective.ru/api'; // Замените на ваш реальный API URL
+  // readonly #jsonURL = "assets/data/services.json"
   #http = inject(HttpClient)
 
   // Вход администратора
@@ -69,11 +69,13 @@ export class ApiService {
     )
   }
 
-  // Удалить сообщение пользователя
   deleteMessage(messageId: number): Observable<any> {
-    return this.#http.delete(`${this.#apiUrl}/messages/${messageId}`);
+    return this.#http.delete(`${this.#apiUrl}/message/${messageId}`);
   }
 
+  deleteAllMessages(): Observable<any> {
+    return this.#http.delete(`${this.#apiUrl}/messages/`);
+  }
 
   // Error handling method
   #handleError<T>(operation = 'operation', result?: T) {
@@ -82,5 +84,12 @@ export class ApiService {
       return of(result as T);
     };
   }
+
+  //get info services
+  getServices(fileName: string): Observable<any> {
+    return this.#http.get(`assets/data/${fileName}.json`);
+  }
+
+
 
 }

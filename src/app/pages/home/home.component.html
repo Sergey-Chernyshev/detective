@@ -10,7 +10,8 @@
 
   <app-services-main
     [linkText]="'Все услуги для физлиц →'"
-    [linkUrl]="'/allUr'"
+    [linkUrl]="'individuals'"
+    [data]="allServices[1]"
   />
 
 
@@ -20,7 +21,8 @@
 
   <app-services-main
     [linkText]="'Все услуги для юрлиц →'"
-    [linkUrl]="'/allUr'"
+    [linkUrl]="'legal_entities'"
+    [data]="allServices[0]"
   />
 
   <app-block-titile

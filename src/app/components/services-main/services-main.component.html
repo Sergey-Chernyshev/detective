@@ -2,40 +2,13 @@
 
 <div class="services__list">
 
-  <div class="service__item">
-    <div class="service-item__preview"></div>
-    <div class="service-item__info">
-      <div class="service-info__title">ИНФОПРОВЕРКА (СБОР ИНФОРМАЦИИ)</div>
-      <div class="service-info__link">
-      </div>
-    </div>
-  </div>
 
-  <div class="service__item">
-    <div class="service-item__preview"></div>
+  <div class="service__item" *ngFor="let item of data; let index">
+    <div class="service-item__preview" [style.background-image]="'url(/assets/services-back/'+item.id+'.png)'"></div>
     <div class="service-item__info">
-      <div class="service-info__title">ИНФОПРОВЕРКА (СБОР ИНФОРМАЦИИ)</div>
-      <div class="service-info__link">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="service__item">
-    <div class="service-item__preview"></div>
-    <div class="service-item__info">
-      <div class="service-info__title">ИНФОПРОВЕРКА (СБОР ИНФОРМАЦИИ)</div>
-      <div class="service-info__link">
-      </div>
-    </div>
-  </div>
-
-  <div class="service__item">
-    <div class="service-item__preview"></div>
-    <div class="service-item__info">
-      <div class="service-info__title">ИНФОПРОВЕРКА (СБОР ИНФОРМАЦИИ)</div>
-      <div class="service-info__link">
-      </div>
+      <div class="service-info__title">{{ item.name }}</div>
+      <a [routerLink]="'aboutservice'" [queryParams]="{ type: linkUrl }" class="service-info__link">
+      </a>
     </div>
   </div>
 
@@ -43,7 +16,7 @@
 </div>
 <div class="services-buttons">
 
-  <a [routerLink]="linkUrl" class="all-services-link">{{ linkText }}</a>
+  <a [routerLink]="'aboutservice'" [queryParams]="{type: linkUrl}" class="all-services-link">{{ linkText }}</a>
   <div class="services-button">
     <app-button-main [buttonText]="'Проконсультироваться'"/>
   </div>

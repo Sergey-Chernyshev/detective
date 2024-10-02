@@ -14,7 +14,7 @@ export class AuthServiceService {
   private cookieService = inject(CookieService);
   private http = inject(HttpClient);
   token: string | null = null;
-  private readonly apiUrl = 'http://127.0.0.1:8000'; // Замените на ваш реальный API URL
+  private readonly apiUrl = 'https://otdetective.ru/api'; // Замените на ваш реальный API URL
 
   get isAuth(): boolean {
     if (!this.token) {

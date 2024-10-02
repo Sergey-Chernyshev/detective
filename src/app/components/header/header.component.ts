@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgForOf} from "@angular/common";
+import {NgClass, NgForOf} from "@angular/common";
 import {LeafletModule} from "@asymmetrik/ngx-leaflet";
 
 @Component({
@@ -7,7 +7,8 @@ import {LeafletModule} from "@asymmetrik/ngx-leaflet";
   standalone: true,
   imports: [
     NgForOf,
-    LeafletModule
+    LeafletModule,
+    NgClass
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -23,8 +24,8 @@ export class HeaderComponent {
   ]
 
   socialItems = [
-    {link: "/", label: "телеграм", icon: "telegramm"},
-    {link: "/", label: "телефон",  icon: "phone"},
-    {link: "/", label: "вотсап",  icon: "whatsapp"},
+    {link: "/", label: "телеграм", icon: "bi-telegram"},
+    {link: "/", label: "телефон",  icon: "bi-telephone"},
+    {link: "/", label: "вотсап",  icon: "bi-whatsapp"},
   ]
 }

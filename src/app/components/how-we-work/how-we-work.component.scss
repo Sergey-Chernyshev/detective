@@ -21,19 +21,20 @@
 
       .about-work__item{
         width: 100%;
-        height: 350px;
+        height: 390px;
         max-width: 300px;
         padding: 20px;
         background-color: #212020;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
 
 
         .about-item__number{
           display: flex;
-          width: 62px;
-          height: 62px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
           background: linear-gradient(251.27deg, #D1C2A9 12.87%, #F4AC11 84.36%);
           text-align: center;
@@ -43,6 +44,8 @@
           font-size: 22.18px;
           font-weight: 700;
           line-height: 27.03px;
+          border: 10px solid #171b1e;
+          box-sizing: content-box;
         }
 
         .about-item__title{
@@ -51,16 +54,27 @@
           line-height: 26.01px;
           text-align: center;
           margin-top: 20px;
+          height: 40px;
+          font-family: "Roboto", sans-serif;
         }
 
         .about-item__description{
-          font-family: "Jost-variable", Roboto, sans-serif;
-          font-size: 17px;
-          font-weight: 300;
+          font-family: "Forum-variable", sans-serif;
+          font-size: 18px;
+          font-weight: 100;
           line-height: 24.57px;
           text-align: left;
-          margin-top: 20px;
+          margin-top: 30px;
 
+        }
+        .about-item__icon{
+          position: absolute;
+          bottom: 10px;
+          right: 20px;
+          i{
+            color: #FFFFFF;
+            font-size: 50px;
+          }
         }
 
       }

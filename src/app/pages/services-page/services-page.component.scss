@@ -1,46 +1,68 @@
-:host{
+:host {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 
-  .page__title{
+  .page__title {
     font-size: 30px;
     width: 100%;
     text-align: center;
+    font-font: "Roboto-Tiny", sans-serif;
+    font-weight: 200;
   }
 
-
-  .services__wrapper{
-
-    margin-top: 30px;
-    width: 100%;
+  .services__wrapper {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 30px;
-    justify-items: center;
+    row-gap: 60px;
+    justify-content: center;
 
-    .type__title{
+    .type__title {
+      display: flex;
       font-size: 30px;
       text-align: center;
+      width: fit-content;
+      padding: 10px 15px;
+      min-width: 500px;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      background: linear-gradient(
+          to right, /* Направление градиента */
+          rgba(0, 0, 0, 0.18), /* Темный цвет */
+          rgba(129, 129, 129, 0.18),
+          #7d7a7a, /* ветлый цвет */
+          rgba(104, 104, 104, 0.18),
+          rgba(0, 0, 0, 0.18)  /* Темный цвет */
+      );
+      align-items: center;
+      justify-content: center;
+      border: #1c1c1c solid 1px;
     }
 
-
-    .service-type__wrapper{
+    .service-type__wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 90%;
-      gap: 20px;
-      //justify-content: center;
-      justify-content: flex-start;
+      width: 100%;
+      gap: 50px;
+      justify-content: center;
+      align-items: stretch; /* Выровнять элементы по высоте */
+      margin-top: 20px;
 
-
-      .service__item{
+      .service__item {
         position: relative;
-        width: 300px;
+        width: 450px;
         min-height: 300px;
-        height: fit-content;
+        height: auto; /* Изменить на auto */
         background-color: #000000;
         border: 2px solid #ffffff;
         padding: 15px;
@@ -50,38 +72,45 @@
         justify-content: center;
         justify-items: center;
         flex: 1 1 300px;
-        max-width: 300px;
+        max-width: 450px;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        box-shadow: 3px 5px 7px rgba(255, 255, 255, 0.5);
 
-        .service__title{
-          width: 270px;
+        .service__title {
+          width: 100%;
+          text-align: center;
           overflow-wrap: break-word;
-          font-size: 24px;
-          color: #8F4119;
-          font-family: "Forum-variable", Roboto, sans-serif;
-          font-weight: 500;
+          font-size: 20px;
+          color: #F6C9B1;
+          font-family: "Roboto", Roboto, sans-serif;
+          font-weight: 700;
+          height: 40px;
         }
 
-        .service__price{
+        .service__price {
           width: 100%;
           height: 60px;
           align-items: center;
           display: flex;
-          transform: rotate(-10deg);
+          transform: rotate(-6deg);
           padding-bottom: 50px;
           padding-top: 10px;
           padding-left: 20px;
           text-align: left;
+          color:#E49031;
         }
+
         .service-description__wrapper {
-          width: calc(100% - 40px);
+          width: calc(100% - 10px);
 
           .description__description {
-            width: 240px;
+            width: 100%;
             display: block; /* Каждый элемент на новой строке */
             position: relative; /* Для правильного позиционирования псевдоэлемента */
             padding-left: 20px; /* Отступ для псевдоэлемента */
             margin-bottom: 8px; /* Отступ между элементами */
             overflow-wrap: break-word;
+            text-align: left;
           }
 
           .description__description::before {
@@ -98,8 +127,8 @@
           display: inline-block; /* Для корректного отображения как кнопки */
           padding: 10px 20px; /* Внутренние отступы */
           border: 2px solid #ff721a; /* Оранжевая обводка */
-          border-bottom: 3px solid #ff721a;
-          font-size: 16px;
+          border-bottom: 5px solid #ff721a;
+          font-size: 18px;
           font-weight: bold;
           color: #ffffff;
           background-color: black;
@@ -109,19 +138,35 @@
           transition: background-color 0.3s, color 0.3s;
           width: 80%;
           bottom: 0;
-          margin-top: auto;
+          margin-top: 10px;
         }
 
         .service__button:hover {
           background-color: #ff721a; /* Заливка при наведении */
           color: white; /* Цвет текста при наведении */
         }
-
-
       }
     }
+  }
+}
 
 
+@media (max-width: 410px) {
+  .service__item{
+    width: 90% !important;
+    min-width: 200px !important;
   }
 
+  .service__price{
+    padding-top: 30px !important;
+  }
+  .type__title{
+    min-width: 250px;
+  }
+}
+
+.why-we__wrapper{
+  width: 90%;
+  margin-left: 5%;
+  //margin-top: 10px;
 }

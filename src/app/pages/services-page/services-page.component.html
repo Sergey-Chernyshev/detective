@@ -1,148 +1,27 @@
-<div class="page__title">Услуги частного детектива для физических лиц</div>
-
+<div class="page__title">Услуги частного детектива для {{ (type === "legal_entities" ? "юридических" : "физических")}} лиц</div>
 
 <div class="services__wrapper">
+  <div *ngFor="let category of servicesData">
+    <div class="type__title">{{ category.name }}</div>
+    <div class="service-type__wrapper">
+      <div *ngFor="let service of category.services" class="service__item">
+        <div class="service__title">{{ service.name }}</div>
+        <div class="service__price">{{ service.price }}</div>
 
-  <div class="type__title">
-    Поиск и сбор информации
+        <div class="service-description__wrapper">
+          <div *ngFor="let detail of service.details" class="description__description">
+            {{ detail }}
+          </div>
+        </div>
+        <div class="service__button">Заказать</div>
+      </div>
+    </div>
   </div>
-  <div class="service-type__wrapper">
+</div>
 
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор свdsadasdasdasdasdasdasdasdasdasdедений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аfdsfsdfsdfsdfывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-
-  </div>
-  <div class="type__title">
-    Поиск и сбор информации
-  </div>
-  <div class="service-type__wrapper">
-
-
-    <div class="service__item">
-      <div class="service__title">Ифопроверка()аывлапр</div>
-      <div class="service__price">Цена по запросу</div>
-
-      <div class="service-description__wrapper">
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-        <div class="description__description">Сбор сведений</div>
-      </div>
-      <div class="service__button">Заказать</div>
-
-
-    </div>
-
-  </div>
-
+<app-block-titile
+  titleText="Почему мы?"
+/>
+<div class="why-we__wrapper">
+  <app-why-choose-us />
 </div>

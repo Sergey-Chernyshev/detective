@@ -3,7 +3,7 @@
   margin-top: 50px;
   height: 150px;
   width: 100%;
-
+  overflow: hidden;
 
   .footer__data{
     position: relative;
@@ -30,7 +30,7 @@
   .footer__decoration{
     position: absolute;
     right: 20px;
-    top: 0;
+    top: -20px;
     width: 150px;
     height: 152.92px;
     gap: 0;

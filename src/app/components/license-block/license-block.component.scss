@@ -20,7 +20,9 @@
   .license__preview{
     width: 216px;
     height: 279px;
-    background-color: #BEB7B7;
+    background-image: url("/assets/imgs/1.png");
+    background-image-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

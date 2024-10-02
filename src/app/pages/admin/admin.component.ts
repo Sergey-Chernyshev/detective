@@ -65,8 +65,18 @@ export class AdminComponent implements OnInit {
 
   deleteMessage(messageId: number) {
     console.log('Delete message with ID', messageId);
-    // handle delete message logic
+    this.#api.deleteMessage(messageId).subscribe(data => {
+      console.log('Delete message with ID', messageId);
+      this.#getMessages()
+    })
   }
+
+  deleteAllMessages() {
+    this.#api.deleteAllMessages().subscribe(data => {
+      this.#getMessages()
+    })
+  }
+
 
   #getAdmins(): void {
     this.#api.getAdmins().subscribe({
@@ -93,9 +103,7 @@ export class AdminComponent implements OnInit {
     })
   }
 
-  deleteAllMessages():void{
 
-  }
 
   #formatDate(): void {
     this.messages = this.messages.map((elem: any) => {

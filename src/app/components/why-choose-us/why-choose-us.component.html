@@ -1,68 +1,9 @@
-<div class="why-we__left-items">
-
-  <div class="item__wrapper">
+<div class="why-we__items">
+  <div class="item__wrapper" *ngFor="let info of infoData.data; let i = index">
     <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
+      <div class="title__number">0{{ i + 1 }}</div> <!-- Нумерация начинается с 1 -->
+      <div class="title__title">{{ info.title }}</div>
     </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
-  </div>
-
-  <div class="item__wrapper">
-    <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
-    </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
-  </div>
-
-  <div class="item__wrapper">
-    <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
-    </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
-  </div>
-
-
-
-</div>
-
-
-<div class="why-we__right-items">
-  <div class="item__wrapper">
-    <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
-    </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
-  </div>
-
-  <div class="item__wrapper">
-    <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
-    </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
-  </div>
-  <div class="item__wrapper">
-    <div class="item__title-block">
-      <div class="title__number">01</div>
-      <div class="title__title">Профессиональный опыт</div>
-    </div>
-    <div class="item__description">Опыт более 20 лет практической оперативной и следственной работы в силовых
-      структурах, у нас работают только профессионалы
-    </div>
+    <div class="item__description">{{ info.description }}</div>
   </div>
 </div>
-
